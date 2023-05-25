@@ -429,11 +429,13 @@ body {
 }
 
 .Cbtn {
-    color: rgb(43, 13, 43);
-    background-color: white;
-    border-radius: 20px;
-    padding: 5px;
+  color: rgb(43, 13, 43);
+  background-color: white;
+  border-radius: 25px;
+  padding: 10px;
+  border: 2px solid white; /* Add this line */
 }
+
 
 .div1_btn {
     position: relative;

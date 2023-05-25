@@ -71,3 +71,14 @@ function expandElement(element) {
       }
   }
 }
+
+// Hide buttons on page load
+window.addEventListener('DOMContentLoaded', function() {
+  var imgBtns = document.querySelector('.carousal_img_text .carousla-img-btn');
+  var divBtns = document.querySelectorAll('.div1_btn, .div2_btn');
+
+  imgBtns.style.display = 'none';
+  divBtns.forEach(function(btn) {
+      btn.style.display = 'none';
+  });
+});
