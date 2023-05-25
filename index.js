@@ -31,6 +31,32 @@ window.addEventListener('DOMContentLoaded', function() {
   });
   
 
+  //carousal
+
+  function expandElement(element) {
+    var container = document.querySelector('.container');
+
+    if (element.classList.contains('expanded')) {
+        container.classList.remove('expanded');
+        element.classList.remove('expanded');
+        element.classList.add('collapsed');
+    } else {
+        container.classList.add('expanded');
+
+        var otherElements = document.querySelectorAll('.image1, .div1, .div2');
+        for (var i = 0; i < otherElements.length; i++) {
+            if (otherElements[i] !== element) {
+                otherElements[i].classList.add('collapsed');
+                otherElements[i].classList.remove('expanded');
+            }
+        }
+
+        element.classList.add('expanded');
+        element.classList.remove('collapsed');
+    }
+}
+
+  
 //   function changeVideoSource() {
 //     var video = document.getElementById("video");
 //     var isMobile = window.matchMedia("(max-width: 768px)").matches;

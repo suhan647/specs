@@ -1,5 +1,7 @@
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  
+ 
 }
 
 .slider-container {
@@ -331,4 +333,226 @@ body {
     height: 80%;
     margin: 0 auto;
   }
+}
+
+
+/* //section2 */
+html,
+body {
+    height: 100%;
+    margin-top: 0px;
+    padding: 0;
+    margin-bottom: 50px;
+}
+
+.container {
+    width: 100%;
+    height: 60%;
+    margin: 0 auto;
+    display: flex;
+    transition: width 0.3s ease;
+    margin-bottom: 100px;
+    margin-top: 100px;
+}
+
+.image1 {
+    flex: 2;
+    height: 100%;
+    width: 30%;
+    object-fit: cover;
+    cursor: pointer;
+    transition: flex 0.3s ease;
+}
+
+.div1,
+.div2 {
+    flex: 1;
+    height: 100%;
+    cursor: pointer;
+    transition: flex 0.3s ease;
+
+}
+
+.div1 {
+    background: linear-gradient(101.83deg, #3a2743 9.43%, #8b51c1 99.34%);
+    ;
+}
+
+.div2 {
+    background: linear-gradient(101.83deg, #7D30A1 9.43%, #C586FF 99.34%);
+    ;
+}
+
+.expanded {
+    flex: 3;
+}
+
+.collapsed {
+    flex: 1.9;
+}
+
+.carousal_img_text {
+    position: relative;
+    color: white;
+    margin: 0;
+}
+
+.carousal_img_text .img-text {
+    position: absolute;
+    left: 70px;
+    top: 150px;
+    color: white;
+}
+
+.img-text p {
+    padding: 0;
+    margin: 0;
+    font-size: large;
+    font-weight: bolder;
+}
+
+.img-text small {
+    color: grey;
+
+}
+
+.carousla-img-btn {
+    position: absolute;
+    left: 70px;
+    top: 400px;
+}
+
+.Cbtn {
+    color: rgb(43, 13, 43);
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+.div1_btn {
+    position: relative;
+    top: 60px;
+}
+
+.div2_btn {
+    position: relative;
+    top: 300px;
+}
+
+.div1_text {
+    color: white;
+}
+
+.div1_list ul {
+    color: white;
+    list-style: none;
+    padding-left: 20px;
+}
+
+.div1_list ul li {
+    padding-bottom: 10px;
+}
+
+.free_coating {
+    color: white;
+    font-size: larger;
+    background-color: #70b2d9;
+    background-image: linear-gradient(315deg, #70b2d9 0%, #39e5b6 74%);
+    width: 50%;
+}
+
+.div1_image {
+    position: relative;
+    left: 140px;
+    top: -120px;
+}
+
+.div2_text p {
+    color: white;
+    padding: 3px;
+    margin: 0px;
+}
+
+.div2_2 {
+    font-size: small;
+    color: rgb(210, 202, 202);
+}
+
+.div2_main {
+    font-size: larger;
+    font-weight: bolder;
+
+}
+
+.div2_last {
+    font-size: small;
+}
+
+.div2_img {
+    margin-left: 20px;
+}
+
+/* Media queries  */
+@media screen and (max-width: 768px) {
+    .container {
+        flex-wrap: wrap;
+    }
+
+    .image1 {
+        width: 100%;
+        flex: 0.5;
+    }
+
+    .div1,
+    .div2 {
+        width: 100%;
+        flex: 1;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        flex-direction: column;
+        height: auto;
+        margin-top: 50px;
+    }
+
+    .image1,
+    .div1,
+    .div2 {
+        width: 100%;
+        flex: 1;
+    }
+
+    .image1 {
+        height: 200px;
+    }
+
+    .div1,
+    .div2 {
+        margin-top: 20px;
+    }
+
+    .carousal_img_text {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .img-text {
+        left: 0;
+        top: 0;
+        transform: translate(0, -50%);
+    }
+
+    .carousla-img-btn {
+        left: 0;
+        top: 0;
+        transform: translate(0, -50%);
+    }
+
+    .div1_image {
+        left: 0;
+        top: 0;
+        transform: none;
+    }
 }
