@@ -232,6 +232,11 @@ body {
     left: 20px;
   }
 
+  .slider-track {
+    width: 50%;
+    height: 25%;
+  }
+
   .respon {
     display: none;
   }
@@ -305,6 +310,7 @@ body {
   .slider-container {
     text-align: center;
     margin-top: 50px;
+    margin-bottom: 10px !important;
   }
 
   .image {
